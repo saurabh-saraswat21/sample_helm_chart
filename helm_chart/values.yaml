@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: jfrog.fkinternal.com/gcr-intellewings/skywalkers-376706/flipkarttest/validator
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "v2"
 
@@ -34,10 +34,10 @@ securityContext:
   #   - ALL
   # readOnlyRootFilesystem: true
    runAsNonRoot: true
-  # runAsUser: 1000
+   runAsUser: 1000
 
 service:
-  type: ClusterIP
+  type: LoadBalancer
   port: 80
 
 ingress:
