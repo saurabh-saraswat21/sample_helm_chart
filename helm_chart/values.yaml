@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: jfrog.fkinternal.com/gcr-intellewings/skywalkers-376706/flipkarttest/validator
-  pullPolicy: Always
+  repository: jfrog.fkinternal.com/gcr-intellewings/skywalkers-376706/flipkarttest/webapp
+  pullPolicy: always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v2"
+  tag: "helloworld"
 
 imagePullSecrets: []
 nameOverride: ""
