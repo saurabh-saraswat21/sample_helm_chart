@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: jfrog.fkinternal.com/gcr-intellewings/skywalkers-376706/flipkarttest/webapp
-  pullPolicy: always
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "helloworld"
 
