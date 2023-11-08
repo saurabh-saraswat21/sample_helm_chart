@@ -2,6 +2,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: {{ include "aml.fullname" . }}
+  annotations:
+    elb.fcp/health-check-path: "/"
+    elb.fcp/health-check-port: "4200"
   labels:
     {{- include "aml.labels" . | nindent 4 }}
 spec:
