@@ -8,7 +8,7 @@ image:
   repository: jfrog.fkinternal.com/gcr-intellewings/skywalkers-376706/flipkarttest/webapp
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "s5"
+  tag: "s6"
 
 imagePullSecrets: []
 nameOverride: ""
